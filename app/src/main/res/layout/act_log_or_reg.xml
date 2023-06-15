@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_for_app"
+    tools:context=".Act_Log_or_Reg">
+
+    <TextView
+        android:id="@+id/Textview_Register_act_register"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="550dp"
+        android:background="@drawable/form_register"
+        android:paddingLeft="35dp"
+        android:paddingTop="15dp"
+        android:shadowColor="#FF9800"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="Register"
+        android:textColor="#FFEB3B"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <EditText
+        android:id="@+id/edit_text_password_act_Register"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="password"
+        android:importantForAutofill="no"
+        android:inputType="numberPassword"
+        android:shadowColor="#FF9800"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:textColor="#ECDD60"
+        android:textColorHint="#ECDD60"
+        app:layout_constraintBottom_toTopOf="@+id/button_register_act_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_username_act_Register"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:shadowColor="#FF9800"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:textColor="#ECDD60"
+        android:textColorHint="#ECDD60"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_username_act_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Textview_Register_act_register"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edit_text_username_act_Register"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textEmailAddress"
+        android:shadowColor="#FF9800"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:textColor="#ECDD60"
+        android:textColorHint="#ECDD60"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_password_act_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/line_for_password_act_register"
+        android:layout_width="361dp"
+
+        android:layout_height="2dp"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ECDD60"
+        app:layout_constraintBottom_toTopOf="@+id/button_register_act_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_password_act_Register"
+        tools:ignore="MissingConstraints"></View>
+
+    <View
+        android:id="@+id/line_for_email_act_register"
+        android:layout_width="361dp"
+
+        android:layout_height="2dp"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="#ECDD60"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_username_act_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:ignore="MissingConstraints"></View>
+
+    <View
+        android:id="@+id/line_for_username_act_register"
+        android:layout_width="361dp"
+
+        android:layout_height="2dp"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="#ECDD60"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_password_act_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_username_act_Register"
+        tools:ignore="MissingConstraints"></View>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_register_act_register"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="25dp"
+        android:autoText="false"
+        android:background="@drawable/input_bg"
+        android:shadowColor="#FF9800"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="register"
+        android:textColor="#ECDD60"
+        app:layout_constraintBottom_toTopOf="@+id/button_transfer_to_login_act_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_password_act_Register"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_transfer_to_login_act_Register"
+        android:layout_width="267dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="34dp"
+        android:background="@android:color/transparent"
+        android:shadowColor="#FF9800"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:text="already have an account? Login!"
+        android:textColor="#ECDD60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_register_act_register"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
